@@ -20,6 +20,8 @@ using (HttpClient client = new HttpClient())
         musicasPreferidas.AdicionarMusicasFavoritas(musicas[510]);
         musicasPreferidas.ExibirMusicasFavoritas();
 
+        musicasPreferidas.GerarArquivoJson();
+
     } catch (Exception ex)
     {
         Console.WriteLine($"Temos um problema: {ex.Message}");
